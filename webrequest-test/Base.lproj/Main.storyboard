@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="webrequest_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oc1-yb-2Mw">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="553"/>
+                                <color key="backgroundColor" red="0.32684861539999999" green="0.84588068179999998" blue="0.6085024362" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2r-4i-eid">
+                                <rect key="frame" x="26" y="561" width="35" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="jU4-KX-vEC"/>
+                                    <constraint firstAttribute="height" constant="30" id="nnH-qJ-Y9U"/>
+                                </constraints>
+                                <state key="normal" title="Swift"/>
+                                <connections>
+                                    <action selector="loadSwift:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qz4-Wc-4rt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42w-uK-V4F">
+                                <rect key="frame" x="244" y="561" width="113" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="KCt-MZ-dVg"/>
+                                    <constraint firstAttribute="width" constant="113" id="Tbk-QK-2ng"/>
+                                </constraints>
+                                <state key="normal" title="Celebrity Gossip"/>
+                                <connections>
+                                    <action selector="loadGossip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U2q-he-ljL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQi-ia-LKt">
+                                <rect key="frame" x="541" y="562" width="39" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="39" id="hQI-I9-R2f"/>
+                                    <constraint firstAttribute="height" constant="30" id="pPi-OY-Gwh"/>
+                                </constraints>
+                                <state key="normal" title="Steak"/>
+                                <connections>
+                                    <action selector="loadSteak:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gPz-xT-MsD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oc1-yb-2Mw" secondAttribute="bottom" constant="50" id="2VR-sC-lAW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dQi-ia-LKt" secondAttribute="bottom" constant="8" id="4tR-kG-Pd9"/>
+                            <constraint firstAttribute="trailing" secondItem="oc1-yb-2Mw" secondAttribute="trailing" id="AFT-2y-Rye"/>
+                            <constraint firstItem="oc1-yb-2Mw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="DdA-ak-y00"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="G2r-4i-eid" secondAttribute="bottom" constant="9" id="NVN-L7-sl7"/>
+                            <constraint firstItem="oc1-yb-2Mw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cfl-PL-0NR"/>
+                            <constraint firstItem="G2r-4i-eid" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="6" id="vGu-AE-jKb"/>
+                            <constraint firstItem="dQi-ia-LKt" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="wAF-tt-P5s"/>
+                            <constraint firstItem="42w-uK-V4F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yK6-c6-tI9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="42w-uK-V4F" secondAttribute="bottom" constant="9" id="yjY-27-iZk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="container" destination="oc1-yb-2Mw" id="ubU-M7-qvF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="418"/>
+        </scene>
+    </scenes>
+</document>
